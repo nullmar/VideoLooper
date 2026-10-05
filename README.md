@@ -30,10 +30,3 @@ To run from source or build the application, you need:
 2. **FFmpeg binaries** (`ffmpeg.exe` and `ffprobe.exe`) placed in the root directory of the application.
 
 ---
-
-## 🚀 Quick Start (Running from Source)
-
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/YOUR_USERNAME/ffmpeg-video-looper.git](https://github.com/YOUR_USERNAME/ffmpeg-video-looper.git)
-   cd ffmpeg-video-looper
