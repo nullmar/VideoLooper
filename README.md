@@ -7,33 +7,33 @@
   <img src="https://img.shields.io/badge/Platform-Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows" />
 </p>
 
-Десктопное приложение для **мгновенного зацикливания видео** до заданной длительности без перекодирования (без потери качества и за считанные секунды).
+A lightweight desktop application for **instant video looping** to a targeted duration without re-encoding (zero quality loss and lightning-fast processing).
 
 ---
 
-## ✨ Особенности
+## ✨ Features
 
-* **⚡ Мгновенный рендер (`-c copy`):** Видео склеивается и обрезается без пересчета кадров. Процесс занимает 1–3 секунды даже для многочасовых файлов.
-* **🎯 Точный ввод времени:** Настройка целевой длительности в **часах, минутах и секундах**.
-* **🚀 Без фризов интерфейса:** Вся обработка FFmpeg выполняется в отдельном фоновом потоке (`threading.Thread`).
-* **📂 Обязательная валидация:** Защита от ошибок — приложение требует явного выбора папки сохранения и имени файла.
-* **🎨 Современный GUI:** Минималистичный темный интерфейс на базе `CustomTkinter` с индикатором прогресса.
-* **🔍 Точный расчёт хронометража:** Использование `ffprobe` для автоматического получения длительности исходника.
+* **⚡ Instant Processing (`-c copy`):** Loops and cuts video streams directly without re-encoding frames. Generates output in just a few seconds, even for multi-hour videos.
+* **🎯 Precise Time Controls:** Set exact target duration using separate **Hours, Minutes, and Seconds** input fields.
+* **🚀 Smooth & Non-Blocking UI:** Heavy FFmpeg operations run in a background thread (`threading.Thread`) to keep the interface completely responsive.
+* **📂 Strict Field Validation:** Protects against unexpected errors by requiring explicit selection of an output folder and filename before processing.
+* **🎨 Modern Dark UI:** Clean aesthetic built with `CustomTkinter`, featuring an animated progress bar and live status feedback.
+* **🔍 Accurate Duration Detection:** Leverages `ffprobe` to inspect input metadata and calculate precise loop counts automatically.
 
 ---
 
-## 🛠️ Требования
+## 🛠️ Prerequisites
 
-Для запуска из исходного кода или сборки потребуются:
+To run from source or build the application, you need:
 
 1. **Python 3.9+**
-2. **FFmpeg** (`ffmpeg.exe` и `ffprobe.exe`) — должны лежать в корневой папке приложения.
+2. **FFmpeg binaries** (`ffmpeg.exe` and `ffprobe.exe`) placed in the root directory of the application.
 
 ---
 
-## 🚀 Быстрый запуск (из исходного кода)
+## 🚀 Quick Start (Running from Source)
 
-1. **Клонируйте репозиторий:**
+1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/ВАШ_НИК/ffmpeg-video-looper.git](https://github.com/ВАШ_НИК/ffmpeg-video-looper.git)
+   git clone [https://github.com/YOUR_USERNAME/ffmpeg-video-looper.git](https://github.com/YOUR_USERNAME/ffmpeg-video-looper.git)
    cd ffmpeg-video-looper
